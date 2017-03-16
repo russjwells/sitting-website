@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <div className="Container">
+        <div className="container">
           <MeditationView
             appState="Beginning"
             defaultMinutes={20}

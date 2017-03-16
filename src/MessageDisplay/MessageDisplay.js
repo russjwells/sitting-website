@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import styles from './MessageDisplay.css';
+import './MessageDisplay.css';
 
 class MessageDisplay extends Component {
   constructor(props){
@@ -9,7 +9,7 @@ class MessageDisplay extends Component {
   render() {
     var message = messageMapper[this.props.appState];
     return(
-      <div className={styles.MessageDisplay}>
+      <div className="MessageDisplay">
         {message}
       </div>
     );

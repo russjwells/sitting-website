@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './Timer.css';
+import './Timer.css';
 
 
 
@@ -34,12 +34,12 @@ class Timer extends Component {
     renderSec = this.pad(this.props.seconds, 2);
 
     return(
-      <div>
-        <div className={styles.Timer}>
+      <div className="Timer">
+
         {renderMin}
         :
         {renderSec}
-        </div>
+        
       </div>
     );
 
