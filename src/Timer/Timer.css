@@ -1,0 +1,17 @@
+.Timer {
+  font-size: 70px;
+  cursor: default;
+}
+.TimerAdjustHolder{
+  flex-direction: row;
+  display: flex;
+}
+.PlusAjust, .MinusAjust {
+  font-size: 50px;
+  margin: 10px;
+  padding: 4px;
+  cursor: pointer;
+}
+.PlusAjust:Hover, .MinusAjust:Hover {
+  color: #FFF;
+}

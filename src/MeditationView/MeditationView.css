@@ -1,0 +1,15 @@
+.MeditationView {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.Howler {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.howlerBalance{
+  width: 30px;
+  height: 0px;
+}

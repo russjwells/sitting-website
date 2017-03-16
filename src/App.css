@@ -1,24 +1,35 @@
-.App {
-  text-align: center;
+.container {
+  width: 100%;
+  padding: 15px;
+  margin: 0 auto;
+  display: inline-flex;
+  justify-content: space-around;
+  flex: 1;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+html > div {
+  display: flex;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.appHolder{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
-
-.App-intro {
-  font-size: large;
+.devHolder{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+div#root{
+  height: 100%;
+  display: flex;
+}
+html,
+body{
+  height: 100%;
+}
+body{
+  margin: 0px;
+}
+.App{
+  width: 100%;
 }
