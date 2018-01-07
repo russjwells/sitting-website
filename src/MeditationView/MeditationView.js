@@ -4,10 +4,8 @@ import Timer from '.././Timer/Timer';
 import Button from '.././Button/Button';
 import ReactHowler from 'react-howler';
 //import Howler from 'howler';
-
 import './MeditationView.css';
-
-//var soundz = new Howl({src: ['http://www.russdigital.com/sitting/singingbowlring.wav']});
+//var singingbowl = new Howl({src: ['%PUBLIC_URL%/singingbowlring.wav']});
 
 class MeditationView extends Component {
   constructor(props) {
@@ -16,7 +14,8 @@ class MeditationView extends Component {
     this.state={
       appState: "Beginning",
       currentMin: this.props.defaultMinutes,
-      currentSec: this.props.defaultSeconds
+      currentSec: this.props.defaultSeconds,
+      playing: false
     };
   }
   tick() {
@@ -76,7 +75,7 @@ class MeditationView extends Component {
     console.log("complete");
     this.setState({appState: "Finished"});
     clearInterval(this.interval);
-    //soundz.play();
+    //singingbowl.play();
   }
   halfway() {
 
@@ -97,6 +96,10 @@ class MeditationView extends Component {
             appState={this.state.appState}
             onClick={this.handleButtonClick}
           />
+          <ReactHowler 
+            src={['singingbowlring.wav']}
+            playing={true}
+          />
         </div>
       );
     } else {
@@ -113,6 +116,10 @@ class MeditationView extends Component {
           <Button
             appState={this.state.appState}
             onClick={this.handleButtonClick}
+          />
+          <ReactHowler 
+            src={['singingbowlring.wav']}
+            playing={false}
           />
         </div>
       );
