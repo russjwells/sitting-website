@@ -84,6 +84,7 @@ class MeditationView extends Component {
     if (this.state.appState=="Finished"){
       return (
         <div className="MeditationView">
+          <div> </div>
           <MessageDisplay
             appState={this.state.appState}
           />
@@ -105,6 +106,7 @@ class MeditationView extends Component {
     } else {
       return (
         <div className="MeditationView">
+          <div> </div>
           <MessageDisplay
             appState={this.state.appState}
           />
