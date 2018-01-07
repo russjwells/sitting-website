@@ -13,8 +13,8 @@ class App extends Component {
         <div className="container">
           <MeditationView
             appState="Beginning"
-            defaultMinutes={0}
-            defaultSeconds={2}
+            defaultMinutes={20}
+            defaultSeconds={30}
           />
         </div>
         <Footer />
